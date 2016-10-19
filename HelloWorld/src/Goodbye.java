@@ -4,6 +4,6 @@
 public class Goodbye {
     public static void SayGoodbye() {
         System.out.print("Goodbye, ");
-        System.out.println("cruel world");
+        System.out.println("crueorld");
     }
 }
