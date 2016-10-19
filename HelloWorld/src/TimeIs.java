@@ -2,7 +2,7 @@
  * Created by opilane on 18.10.2016.
  */
 public class TimeIs {
-    public static void main(String[] args) {
+    public static void Time60() {
         String message = "Times is: ";
         int hour = 11;
         int minute = 59;
