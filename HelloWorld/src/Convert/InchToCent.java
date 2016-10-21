@@ -12,7 +12,7 @@ public class InchToCent {
         Scanner in = new Scanner(System.in);
 
         double cmPerInch = 2.54;
-        cm = inch * cmPerInch;
+        //cm = inch * cmPerInch;                - not needed
 
         //final double CM_PER_INCH = 2.54;      - easy to read
 
