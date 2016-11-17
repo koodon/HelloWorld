@@ -8,6 +8,7 @@ public class Distance {
         double dist = distance(1.0, 2.0, 4.0, 6.0);
         double dsSquare = square(1.0, 2.0, 4.0, 6.0);
         double distM = distanceM(1.0, 2.0, 4.0, 6.0);
+       // double areaC = calculateArea();
     }
     public static double distance(double x1, double y1, double x2, double y2) {
         double dx = x2 - x1;
@@ -20,7 +21,7 @@ public class Distance {
         double dx = x2 - x1;
         double dy = y2 - y1;
         double dsquared = dx * dx + dy * dy;
-        System.out.println("dsquared is " + dsquared);
+        System.out.println("d squared is " + dsquared);
         return 0.0;
     }
     public static double distanceM (double x1, double y1, double x2, double y2) {
@@ -28,7 +29,26 @@ public class Distance {
         double dy = y2 - y1;
         double dsquaredM = dx * dx + dy * dy;
         double result = Math.sqrt(dsquaredM);
-        System.out.println("dsquared is " + result);
+        System.out.println("d square root is " + result);
+        return result;
+    }
+
+    //starting here, nothingness..
+    public static double circleArea(double xc, double yc, double xp, double yp) {
+        double radius = distance(xc,yc,xp, yp);
+        double area = calculateArea(radius);
+        System.out.println("Radius is " + area);
+        return area;
+    }
+    public static double circleAreaShort(double xc, double yc, double xp, double yp) {
+        double radius = distance(xc, yc, xp, yp);
+        double area = calculateArea(radius);
+        return area;
+    }
+
+    public static double calculateArea(double radius) {
+        double result = Math.PI * radius * radius;
+        System.out.println("Area is " + result);
         return result;
     }
 }
