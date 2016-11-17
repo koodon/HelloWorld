@@ -6,19 +6,19 @@ package SessTwo;
 public class Fun {
     public static void main(String[] args) {
         double a = 1.0 * 2.0 + 3.0;
-        System.out.println(a);
-        double valueB = (Math.sin(Math.PI / 4)) + (((Math.cos(Math.PI / 4)) / 2));
-        System.out.println(valueB);
-        double valueC = Math.log(10) + Math.log(20);
-        System.out.println(valueC);
+        System.out.println("a. 1 * 2 + 3 = " + a);
+        double b = (Math.sin(Math.PI / 4)) + (((Math.cos(Math.PI / 4)) / 2));
+        System.out.println("b. sinPI/4 + cos PI/4/2 = " + b);
+        double c = Math.log(10) + Math.log(20);
+        System.out.println("c. log10 + log20 = " + c);
+        multadd(a, b, c);
     }
     public static double multadd(double a, double b, double c) {
         double value = a * b + c;
+        System.out.println("a * b + c = " + value);
         return value;
 
 
-
-
-    //public static void expSum() {
+        //public static void expSum() {
     }
 }
